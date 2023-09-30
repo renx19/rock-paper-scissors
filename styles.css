@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: black;
+    background-color: rgb(54, 54, 54);
 }
 #container {
     justify-content: center;
@@ -11,38 +11,37 @@ body {
 }
 
 #opponent-choice {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     background-color: rgb(243, 248, 250); 
-    margin-top: 10px;
     border: solid 4px aqua;
 }
 
 #your-choice {
-    width: 300px;
-    height: 300px;
-     background-color: rgb(243, 248, 250); 
-    margin-top: 10px; 
+    width: 280px;
+    height: 280px;
+    background-color: rgb(243, 248, 250); 
     border: solid 4px aqua;
 }
 
 #choices {
-    margin-top: 10px;
 }
 
 #choices img {
     width: 80px;
     height: 80px;
     padding: 5px;
-    margin-left: 10px;
-   
+    margin-left: 10px;  
 }
 
-#opponent-score {
-    margin-top: 20px;
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 488px) {
+    #opponent-choice, #your-choice {
+        width: 250px;
+        height: 250px;
+    }
+    #choices img {
+        width: 70px;
+        height: 70px;
+    }
 }
-
-#your-score {
-    margin-top: 20px;
-}
-
